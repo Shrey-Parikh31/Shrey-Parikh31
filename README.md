@@ -6,6 +6,10 @@ Computer Science at **Penn State Harrisburg**, graduating **May 2027**. I build 
 
 ### What I'm building
 
+**[tool-picker](https://github.com/Shrey-Parikh31/tool-picker)**: a Claude Code plugin that shows you which of your installed skills, connectors and plugins fit a prompt, before Claude starts working.
+I opened this as a feature request on `anthropics/claude-code`, then built it two days later. It runs on the first prompt of a session, ranks what you have installed by how well it fits the task, and lets you choose. MIT licensed.
+`JavaScript` · `MCP` · `Claude Code hooks`
+
 **[RBAC RAG Assistant](https://github.com/Shrey-Parikh31/rbac-rag-assistant)** — a knowledge agent that answers only from documents you are cleared to read.
 The caller's role is bound outside the tool interface, so a prompt cannot escalate its own access, and the clearance filter runs before ranking so restricted material never reaches the context window. A 48-question evaluation set scores retrieval separately from generation: moving to embedding-based search took retrieval from **83.3% → 93.8%**, at **94.7%** end-to-end correctness with **zero leaks**.
 `Python` · `MCP` · `Gemini` · `embeddings` · `NumPy`
